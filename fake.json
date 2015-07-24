@@ -1,0 +1,47 @@
+{
+    "medicines": [
+        {
+            "name": "カルスロット錠20",
+            "image": "http://health.xgoo.jp/medicine/img/medicine/item/2007-101.jpg",
+            "dosage": "1錠",
+            "administration": "1日1回",
+            "when": "朝食後",
+            "disp": "14日分",
+            "stimulant": "血管を拡げ血圧を下げます。カルシウム拮抗薬と呼ばれています。",
+            "recaution": "グレープフルーツジュースや、その他の柑橘類（ブンタン、ハッサク、ダイダイ、ザボンなど）の飲食で、血液の濃度があがって薬の作用や副作用が強くなることがあります。",
+            "goo": "http://health.goo.ne.jp/medicine/1560"
+        },
+        {
+            "name": "タナトリル錠5",
+            "image": "http://health.xgoo.jp/medicine/img/medicine/item/2014-128.jpg",
+            "dosage": "1錠",
+            "administration": "1日1回",
+            "when": "朝食後",
+            "disp": "14日分",
+            "stimulant": "末梢の血管を拡げて血圧を下げ、心臓の働きも助けます。ACE阻害薬とも呼ばれています。",
+            "recaution": "",
+            "goo": "http://health.goo.ne.jp/medicine/1695"
+        },
+        {
+            "name": "ラシックス錠20mg",
+            "image": "http://health.xgoo.jp/medicine/img/medicine/item/2009-186.jpg",
+            "dosage": "1錠",
+            "administration": "1日1回",
+            "when": "朝食後",
+            "disp": "14日分",
+            "stimulant": "降圧利用薬といわれるもので、尿量を増やしてむくみをとり血圧を下げます。特に利尿作用が強いおくお薬です。",
+            "recaution": "",
+            "goo": "http://health.goo.ne.jp/medicine/1499"
+        }
+    ],
+    "pharmacy": {
+        "message": "何か異常がありましたら、医師、薬剤師にご連絡ください。",
+        "name": "横浜薬局",
+        "tel": "045-1234-5678",
+        "address": "神奈川県横浜市中区1-1",
+        "access": "横浜駅西口から徒歩10分",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.539717801763!2d139.622715!3d35.466187999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c13b12f4eed%3A0x620a74beb7183184!2z5qiq5rWc6aeF!5e0!3m2!1sja!2sjp!4v1437397321740",
+        "open": "月から土9:00~18:00, 日・祝日"
+    },
+    "recautions": "注）薬品名の後の（）内は、内服薬は1日量、頓服は1回量、外用は全量を表示しています。"
+}

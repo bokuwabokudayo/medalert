@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head %}
+<header class="bar bar-nav btn-primary">
+  <button class="btn pull-left" onClick="location.href='/test'">テスト送信</button>
+  <h1 class="title">服用通知の設定</h1>
+  <a class="icon icon-plus pull-right"></a>
+</header>
+{% endblock %}
+{% block content %}
+<ul class="table-view">
+  <li class="table-view-divider">朝&nbsp;&nbsp;<span class="icon icon-sound"></span> 7:30</li>
+  {% for medicine in medicines %}
+  <li class="table-view-cell media">
+    <!-- <a class="navigate-right"> -->
+      <img class="media-object pull-left" src="{{ medicine.image }}" width="84">
+      <div class="media-body">
+        {{ medicine.name }}（{{ medicine.dosage }}）<br>
+        {{ medicine.administration }}{{ medicine.when }}&nbsp;&nbsp;{{ medicine.disp }}
+        <p>{{ medicine.stimulant }}</p>
+        {% if medicine.recaution %}
+        <p style="color:#d9534f;"><span class="icon icon-info"></span>{{ medicine.recaution }}</p>
+        {% endif %}
+      </div>
+    <!-- </a> -->
+  </li>
+  {% endfor %}
+  <li class="table-view-divider">昼&nbsp;&nbsp;<span class="icon icon-sound4"></span></li>
+  <li class="table-view-divider">夜&nbsp;&nbsp;<span class="icon icon-sound4"></span></li> 
+</ul>
+<p class="content-padded">{{ recautions }}</p>
+{% endblock %}

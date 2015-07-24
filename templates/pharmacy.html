@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block head %}
+<header class="bar bar-nav">
+  <h1 class="title">かかりつけ薬局</h1>
+</header>
+{% endblock %}
+{% block content %}
+<div class="card">
+  <ul class="table-view">
+    <li class="table-view-cell">{{ pharmacy.message }}</li>
+    <li class="table-view-cell table-view-divider">薬局</li>
+    <li class="table-view-cell">{{ pharmacy.name }}</li>
+    <li class="table-view-cell table-view-divider">連絡先</li>
+    <li class="table-view-cell">{{ pharmacy.tel }}</li>
+    <li class="table-view-cell table-view-divider">所在地・アクセス</li>
+    <li class="table-view-cell">{{ pharmacy.address }}</li>
+    <li class="table-view-cell">{{ pharmacy.access }}</li>
+    <iframe src="{{ pharmacy.map }}" width="1024" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <li class="table-view-cell table-view-divider">開局時間・定休日</li>
+    <li class="table-view-cell">{{ pharmacy.open }}</li>
+  </ul>
+</div>
+{% endblock %}
