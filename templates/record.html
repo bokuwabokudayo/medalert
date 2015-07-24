@@ -5,4 +5,37 @@
 </header>
 {% endblock %}
 {% block content %}
+<style type="text/css">
+  .cal_wrapper {
+  max-width: 800px; /* 最大幅 */
+  min-width: 300px; /* 最小幅 */
+  margin: 2.0833% auto;
+}
+ 
+.googlecal {
+  position: relative;
+  padding-bottom: 100%; /* 縦横比 */
+  height: 0;
+  overflow: hidden;
+}
+.googlecal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+ 
+@media only screen and (min-width: 600px) {
+  /* 画面幅が600px以上の場合の縦横比の指定 */
+  .googlecal {
+    padding-bottom: 75%;
+  }
+}
+</style>
+<div class="cal_wrapper">
+    <div class="googlecal">
+      <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bluemix15%40gmail.com&amp;color=%231B887A&amp;src=pktjj6kqv3986bm4cls9r51ito%40group.calendar.google.com&amp;color=%23333333&amp;ctz=Asia%2FTokyo" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"　></iframe>
+    </div> 
+</div>
 {% endblock %}
